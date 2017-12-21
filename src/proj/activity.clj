@@ -8,7 +8,7 @@
     :exposes-methods {mymethod supermymethod}
     ))
 
-(defn -mymethod [^proj.activity.MyActivity this]
+(defn -mymethod [this]
   (.supermymethod this)
   (println "hello")
   )
