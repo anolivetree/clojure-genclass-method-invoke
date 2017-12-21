@@ -7,5 +7,5 @@
   :main proj.core
   :target-path "target/%s"
   :aot [proj.core, proj.activity]
-  :resource-paths ["lib/ver1.jar"]                          ;; compile against ver2
+  :resource-paths ["lib/ver2.jar"]                          ;; compile against ver2
   :profiles {:uberjar {:aot :all}})
