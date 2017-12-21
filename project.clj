@@ -4,8 +4,8 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.7.0"]]
-  :main ^:skip-aot proj.core
+  :main proj.core
   :target-path "target/%s"
   :aot [proj.core, proj.activity]
-  :resource-paths ["lib/ver2.jar"]                          ;; compile against ver2
+  :resource-paths ["lib/ver1.jar"]                          ;; compile against ver2
   :profiles {:uberjar {:aot :all}})

@@ -1,36 +1,10 @@
-# proj
 
-FIXME: description
+# how to reproduce
 
-## Installation
-
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar proj-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+```
+make // you don't need this if you use precompiled jars in lib/
+vim project.clj // choose ver2.jar or ver1.jar in  :resource-paths ["lib/ver2.jar"]
+lein uberjar
+java -cp lib/ver1.jar:./target/uberjar/proj-0.1.0-SNAPSHOT-standalone.jar proj.core
+```
+- 

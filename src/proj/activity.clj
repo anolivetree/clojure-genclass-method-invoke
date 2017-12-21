@@ -5,10 +5,10 @@
   (:gen-class
     :name "proj.activity.MyActivity"
     :extends myjava.Activity
-    :exposes-methods {mymethod super-mymethod}
+    :exposes-methods {mymethod supermymethod}
     ))
 
-(defn -mymethod [this]
-  (.super-mymethod this)
+(defn -mymethod [^proj.activity.MyActivity this]
+  (.supermymethod this)
   (println "hello")
   )
